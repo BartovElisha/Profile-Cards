@@ -16,24 +16,20 @@
 
 </head>
 
-<body>
+<body onload="load()">
 
     <!-- As a heading -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid justify-content-center">
-            <span class="navbar-brand mb-0 h1 fs-5 fw-bold">Profile Cards</span>
+            <span id="profile-cards" class="navbar-brand mb-0 h1 fs-5 fw-bold">Profile Cards</span>
 
             <div class="dropdown">
-                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                <button id="language" class="btn btn-primary btn-sm dropdown-toggle" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Language
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">xx</a></li>
-                    <li><a class="dropdown-item" href="#">xx</a></li>
-                    <li><a class="dropdown-item" href="#">xx</a></li>
-                    <li><a class="dropdown-item" href="#">xx</a></li>
-                    <li><a class="dropdown-item" href="#">xx</a></li>
+                <ul id="dropdown-list" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <!-- This li lines filled by "setLanguage()" JavaScript function -->
                 </ul>
             </div>
         </div>
@@ -47,9 +43,10 @@
                         class="card-img-top rounded-circle img-thumbnail mx-auto d-block" style="width:
                         10rem;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Patrick Wood</h5>
-                        <h6 class="card-title">CEO / Co-Founder</h6>
-                        <p class="card-text">Don't scared of the truth because we need to restart the human foundation
+                        <h5 id="person-name-1" class="card-title">Patrick Wood</h5>
+                        <h6 id="job-title-1" class="card-title">CEO / Co-Founder</h6>
+                        <p id="description-1" class="card-text">Don't scared of the truth because we need to restart the
+                            human foundation
                             in truth And I Love you like Kanye I love Rick Owens' bed design but the back is...</p>
                         <div class="container">
                             <!-- Faceboock -->
@@ -102,9 +99,9 @@
                         class="card-img-top rounded-circle img-thumbnail mx-auto d-block" style="width:
                         10rem;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Debon Amet</h5>
-                        <h6 class="card-title">Front End Developer</h6>
-                        <p class="card-text">Don't scared of the truth because we need to restart the
+                        <h5 id="person-name-2" class="card-title">Debon Amet</h5>
+                        <h6 id="job-title-2" class="card-title">Front End Developer</h6>
+                        <p id="description-2" class="card-text">Don't scared of the truth because we need to restart the
                             human foundation
                             in truth And I Love you like Kanye I love Rick Owens' bed design but the
                             back is...</p>
@@ -174,9 +171,9 @@
                         class="card-img-top rounded-circle img-thumbnail mx-auto d-block" style="width:
                         10rem;" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Mary Dunst</h5>
-                        <h6 class="card-title">Web Designer</h6>
-                        <p class="card-text">Don't scared of the truth because we need to restart the
+                        <h5 id="person-name-3" class="card-title">Mary Dunst</h5>
+                        <h6 id="job-title-3" class="card-title">Web Designer</h6>
+                        <p id="description-3" class="card-text">Don't scared of the truth because we need to restart the
                             human foundation
                             in truth And I Love you like Kanye I love Rick Owens' bed design but the
                             back is...</p>
